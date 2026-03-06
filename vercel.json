@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
+}
+```
+
+5. **"Commit changes"** ile kaydedin
+
+Vercel otomatik deploy edecek (~1 dakika). Sonra şu URL'yi test edin:
+```
+https://benim-proxy.vercel.app/api/proxy?url=https://example.com
